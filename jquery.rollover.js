@@ -1,6 +1,6 @@
 /**
 * jQuery Rollover Plugin
-* Version 1.2.1
+* Version 1.2.2
 * Copyright (c) Hideki Abe
 * 
 * This JavaScript referred to "mjl.js" provided by Mitsue-Links Co., Ltd.
@@ -214,9 +214,8 @@
         
         // プラグイン処理開始
         return this.each(function(index, element) {
-            var targets = collectTargets($(this));    // 戻り値は通常の配列
-            
             transactRoot = element;
+            var targets = collectTargets($(this));    // 戻り値は通常の配列
             setData(targets);
             setEvents(targets);
         });
