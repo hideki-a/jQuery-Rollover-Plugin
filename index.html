@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-language" content="ja" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<title>jQuery Rollover Plugin Sample</title>
+<link rel="stylesheet" type="text/css" href="css/basic.css" />
+<script type="text/javascript" src="jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="jquery.rollover.js"></script>
+<script type="text/javascript" src="run.js"></script>
+</head>
+
+<body class="home">
+<h1>jQuery Rollover Plugin Sample</h1>
+<div class="section">
+<h2>サンプル1</h2>
+<p>img要素に.roll付与</p>
+<ul class="nav-global">
+<li><a href="#"><img src="images/gnav_shimalog.gif" width="90" height="37" alt="Shimalog" class="roll" /></a></li>
+</ul>
+<ul class="list-notice-01">
+<li><span>※</span> .rollが付与された要素自身、もしくは子孫要素に対して処理を行うため、a要素にフォーカスしてもロールオーバー処理は行われない（MJL.Rolloverと同一仕様）。</li>
+</ul>
+</div><!-- /.section -->
+
+<div class="section">
+<h2>サンプル2</h2>
+<p>ul要素に.roll付与</p>
+<ul class="nav-global roll">
+<li><a href="#"><img src="images/gnav_blog.gif" width="90" height="37" alt="Blog" /></a></li>
+<li><a href="#"><img src="images/gnav_shimalog.gif" width="90" height="37" alt="Shimalog" /></a></li>
+<li><a href="#"><img src="images/gnav_wallpaper.gif" width="90" height="37" alt="Wallpaper" /></a></li>
+<li><a href="#"><img src="images/gnav_about.gif" width="90" height="37" alt="About" /></a></li>
+</ul>
+</div><!-- /.section -->
+
+<div class="section">
+<h2>サンプル3</h2>
+<p>最初のメニューのa要素に.unroll（ロールオーバー処理しない）を指定</p>
+<ul class="nav-global roll">
+<li><a href="#" class="unroll"><img src="images/gnav_blog.gif" width="90" height="37" alt="Blog" /></a></li>
+<li><a href="#"><img src="images/gnav_shimalog.gif" width="90" height="37" alt="Shimalog" /></a></li>
+<li><a href="#"><img src="images/gnav_wallpaper.gif" width="90" height="37" alt="Wallpaper" /></a></li>
+<li><a href="#"><img src="images/gnav_about.gif" width="90" height="37" alt="About" /></a></li>
+</ul>
+</div><!-- /.section -->
+
+<div class="section">
+<h2>サンプル4</h2>
+<p>ロールオーバーの接尾辞を_onに変更</p>
+<ul class="nav-global">
+<li><a href="#"><img src="images/gnav_shimalog.gif" width="90" height="37" alt="Shimalog" class="roll-test" /></a></li>
+</ul>
+<ul class="list-notice-01">
+<li><span>※</span> .rollが付与された要素自身、もしくは子孫要素に対して処理を行うため、a要素にフォーカスしてもロールオーバー処理は行われない（MJL.Rolloverと同一仕様）。</li>
+</ul>
+</div><!-- /.section -->
+
+<div class="section">
+<h2>サンプル5</h2>
+<p>input要素のロールオーバー</p>
+<form action="#" method="get">
+<p><input type="text" value="テスト" name="query" /></p>
+<ul class="nav-form-send">
+<li><input type="image" src="images/btn_send.png" alt="内容を送信する" class="roll" /></li>
+</ul>
+</form>
+</div><!-- /.section -->
+</body>
+</html>

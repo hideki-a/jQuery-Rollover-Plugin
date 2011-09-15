@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* ===========================================================
+
+    Basic.css
+     *generated from basic.scss
+     *Author: Hideki Abe
+
+=========================================================== */
+/* -----------------------------------------------------------
+    Reset
+----------------------------------------------------------- */
+html,
+body,
+article,
+section,
+aside,
+header,
+footer,
+nav,
+address,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+p,
+blockquote,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+figure,
+figcaption,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+form,
+fieldset,
+legend,
+label,
+input,
+textarea,
+select,
+object,
+iframe,
+embed,
+video,
+audio,
+canvas,
+img,
+a,
+em,
+strong,
+b,
+i,
+mark,
+small,
+sub,
+sup,
+abbr,
+cite,
+q,
+time,
+ruby,
+ins,
+del,
+dfn,
+code,
+var,
+samp,
+kbd{
+margin:0;
+padding:0;
+}
+
+html{
+font-size:100.01%;
+overflow-y:scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+font-size:100%;
+font-weight:bold;
+}
+
+em{
+font-style:normal;
+}
+
+ol,
+ul{
+list-style:none;
+}
+
+blockquote,
+q{
+quotes:none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after{
+content:"";
+content:none;
+}
+
+pre,
+code,
+kbd,
+samp{
+font-family:monospace;
+}
+
+img{
+border:none;
+vertical-align:bottom;
+}
+
+table{
+border-collapse:collapse;
+font-size:inherit;
+}
+
+caption,
+th{
+font-weight:normal;
+text-align:left;
+}
+
+input,
+select,
+textarea{
+vertical-align:middle;
+font-size:inherit;
+}
+
+/* -----------------------------------------------------------
+    Styles
+----------------------------------------------------------- */
+body{
+margin:10px;
+line-height:1.5;
+font-size:0.75em;
+font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.section{
+margin-bottom:3em;
+}
+
+h1{
+margin-bottom:2em;
+line-height:1.38;
+font-size:1.33em;
+}
+
+h2{
+margin-bottom:0.5em;
+padding:0 0 3px 10px;
+border-bottom:1px solid #999;
+line-height:1.43;
+font-size:1.17em;
+}
+
+p,
+ul{
+margin-bottom:1em;
+}
+
+.nav-global li{
+float:left;
+}
+
+.nav-global li img{
+vertical-align:middle;
+}
+
+.list-notice-01 li{
+position:relative;
+padding-left:1.2em;
+_zoom:1;
+}
+
+.list-notice-01 li span{
+position:absolute;
+top:0;
+left:0;
+}
+
+/* -----------------------------------------------------------
+    Self Clearing
+----------------------------------------------------------- */
+.clearfix:after,
+.nav-global:after{
+visibility:hidden;
+display:block;
+clear:both;
+content:" ";
+}
+
+.clearfix,
+.nav-global{
+*zoom:1;
+}
