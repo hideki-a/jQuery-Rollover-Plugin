@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-/**
-* jQuery Rollover Plugin
-* Version 1.2.3
-* Copyright (c) Hideki Abe
-* 
-* This JavaScript referred to "mjl.js" provided by Mitsue-Links Co., Ltd.
-* (@source: http://www.mitsue.co.jp/service/produce/mjl.html)
-*
-* Licensed under the GNU General Public License.
-*/
-=======
 /*!*
  * jQuery Rollover Plugin
  * Version 1.2.3
@@ -20,7 +8,6 @@
  *
  * Licensed under the GNU General Public License.
  */
->>>>>>> Change of option items and fine tuning.
 (function($) {
     var namespace = "rollover";
     $.fn[namespace] = function(option) {
