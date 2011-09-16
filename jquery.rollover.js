@@ -1,7 +1,7 @@
 /*!*
  * jQuery Rollover Plugin
  * Version 1.2.3
- * Copyright (c) Hideki Abe
+ * Copyright (c) 2011 Hideki Abe
  * 
  * This JavaScript referred to "mjl.js" provided by Mitsue-Links Co., Ltd.
  * (@source: http://www.mitsue.co.jp/service/produce/mjl.html)
