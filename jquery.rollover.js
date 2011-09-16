@@ -1,6 +1,6 @@
 /**
 * jQuery Rollover Plugin
-* Version 1.2.2
+* Version 1.2.3
 * Copyright (c) Hideki Abe
 * 
 * This JavaScript referred to "mjl.js" provided by Mitsue-Links Co., Ltd.
@@ -143,14 +143,12 @@
                     $img.data(namespace, {
                         // normalSrc: 通常時の画像パス
                         // hoverSrc: ロールオーバー時の画像パス
-                        // status: ロールオーバー状態
                         normalSrc: src,
-                        hoverSrc: src.replace(/(\.[^\.]+)$/, settings.hoverSuffix + "$1"),
-                        status: "off"
+                        hoverSrc: src.replace(settings.replaceCond, settings.replaceStr)
                     });
                     
                     // キャッシュを作成
-                    addCache(src.replace(/(\.[^\.]+)$/, settings.hoverSuffix + "$1"))
+                    addCache(src.replace(settings.replaceCond, settings.replaceStr))
                 }
             }
         }
@@ -214,15 +212,18 @@
         
         // プラグイン処理開始
         return this.each(function(index, element) {
+            var targets;
+            
             transactRoot = element;
-            var targets = collectTargets($(this));    // 戻り値は通常の配列
+            targets = collectTargets($(this));    // 戻り値は通常の配列
             setData(targets);
             setEvents(targets);
         });
     };
     
     $.fn[namespace].defaults = {
-        disable: ".unroll",    // ロールオーバー処理対象から外すclass属性名
-        hoverSuffix: "_o"      // ロールオーバー画像の接尾辞
+        disable: ".unroll",             // ロールオーバー処理対象から外すclass属性名
+        replaceCond: /(\.[^\.]+)$/,     // 画像URIの文字列検索条件
+        replaceStr: "_o$1"              // 画像URIの文字列置換条件
     };
 }(jQuery));
