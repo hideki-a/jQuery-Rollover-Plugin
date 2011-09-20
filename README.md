@@ -11,10 +11,7 @@ GNU GPL Version 3のもとに提供します。
 ## 利用方法
 
 * jQuery及びjQuery Rollover Pluginをロードします。
-* $(function() { 〜 });内に、本プラグインを有効化するメソッドを記述します。
-        $(function() {
-            $(".roll").rollover();
-        });
+* $(function() { 〜 });内に、本プラグインを有効化するメソッドを記述します（run.jsを参照）。
 * (X)HTML文書内に、上記で指定したID属性/class属性を設定します。
 * ロールオーバー前の画像ファイル名と拡張子の間に"_o"をつけた画像を用意します。
 
