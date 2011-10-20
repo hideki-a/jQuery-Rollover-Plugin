@@ -60,7 +60,7 @@ class属性に"unroll"を設定した要素はロールオーバー効果を付�
 
 ### 1.2.4
 
-JSLint(http://www.jslint.com/)のチェック結果に基づく修正
+[JSLint](http://www.jslint.com/)のチェック結果に基づく修正
 
 ### 1.2.3
 
