@@ -28,7 +28,7 @@ class属性に"unroll"を設定した要素はロールオーバー効果を付�
     $(function() {
         $(".roll").rollover({ disable: ".unroll" });
     });
-　　　　
+
 ### ロールオーバー時の画像接尾辞を変更
 
 パラメーター"replaceStr"に任意の文字列を設定します。
@@ -57,6 +57,10 @@ class属性に"unroll"を設定した要素はロールオーバー効果を付�
     });
 
 ## リリースノート
+
+### 1.2.4
+
+JSLint(http://www.jslint.com/)のチェック結果に基づく修正
 
 ### 1.2.3
 
